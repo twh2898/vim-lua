@@ -206,6 +206,7 @@ if version >= 508 || !exists("did_lua_syn_inits")
   else
     command -nargs=+ HiLink hi def link <args>
   endif
+  HiLink Noise               Normal
   HiLink luaParens           Noise
   HiLink luaBraces           Structure
   HiLink luaBrackets         Noise
@@ -215,25 +216,25 @@ if version >= 508 || !exists("did_lua_syn_inits")
   HiLink luaCommentLong      luaComment
   HiLink luaCommentTodo      Todo
   HiLink luaCond             Conditional
-  HiLink luaConstant         Constant
+  HiLink luaConstant         Number
   HiLink luaDocTag           Underlined
   HiLink luaEllipsis         Special
   HiLink luaElse             Conditional
   HiLink luaError            Error
   HiLink luaFloat            Float
   HiLink luaFuncArgName      Noise
-  HiLink luaFuncCall         PreProc
+  HiLink luaFuncCall         Function
   HiLink luaFuncId           Function
   HiLink luaFuncName         luaFuncId
   HiLink luaFuncTable        luaFuncId
   HiLink luaFuncKeyword      luaFunction
-  HiLink luaFunction         Structure
+  HiLink luaFunction         Type
   HiLink luaFuncParens       Noise
   HiLink luaGoto             luaStatement
   HiLink luaGotoLabel        Noise
   HiLink luaIn               Repeat
   HiLink luaLabel            Label
-  HiLink luaLocal            Type
+  HiLink luaLocal            Define
   HiLink luaNumber           Number
   HiLink luaSymbolOperator   luaOperator
   HiLink luaNotEqOperator    luaOperator
